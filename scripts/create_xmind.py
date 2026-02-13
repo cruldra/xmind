@@ -25,7 +25,7 @@ def create_xmind(
     
     Args:
         output_path: 新文件输出路径
-        template_path: 模板文件路径，默认使用templates/demo.xmind
+        template_path: 模板文件路径，默认使用assets/demo.xmind
         sheet_title: 画布标题（可选）
         root_topic_title: 中心主题标题（可选）
         
@@ -58,7 +58,7 @@ def create_xmind(
     if template_path is None:
         # 默认使用demo.xmind作为模板
         script_dir = Path(__file__).parent
-        template_path = script_dir.parent / "templates" / "demo.xmind"
+        template_path = script_dir.parent / "assets" / "demo.xmind"
     else:
         template_path = Path(template_path)
     
